@@ -5,8 +5,8 @@ public class Filme {
     String nome;
     int anoDeLancamento;
     boolean incluidoNoPlano;
-    double somaDasAvaliacoes;
-    int totalDeAvaliacoes;
+    private double somaDasAvaliacoes; //Utilizando modificadores de acesso
+    private int totalDeAvaliacoes; //Encapsulando
     int duracaoEmMinutos;
 
     //Criando um método
@@ -24,6 +24,11 @@ public class Filme {
 
     double mediaDasAvaliacoes(){ // Criando um método que retorna um valor
         return somaDasAvaliacoes / totalDeAvaliacoes; // Retornando a média das avaliações
+    }
+
+    //Criando metodo acessor
+    int getTotalDeAvaliacoes(){
+        return totalDeAvaliacoes;
     }
 
 }
