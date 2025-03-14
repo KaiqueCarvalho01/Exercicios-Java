@@ -16,6 +16,18 @@ public class Principal {
        System.out.println("Total de avaliações: " + meuFilme.getTotalDeAvaliacoes());
        System.out.println("Média Avaliação " + meuFilme.mediaDasAvaliacoes());
        System.out.println("Ano de Lançamento: " + meuFilme.getAnoDeLancamento());
+
+
+       System.out.println("-------------------------------------------------");
+       System.out.println("-------------------------------------------------");
+       Serie lost = new Serie();
+       lost.setNome("Lost");
+       lost.setAnodeLancamento(2004);
+       lost.setTemporadas(10);
+       lost.setEpisodiosPorTemporada(20);
+       lost.setMinutosPorEpisodio(45);
+        lost.setFinalizada(false);
+       lost.exibeFichaTecnica();
        
     }
 }
