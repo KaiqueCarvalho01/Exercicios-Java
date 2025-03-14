@@ -5,22 +5,19 @@ public class ContaBancaria {
     private double saldo;
     public String titular;
 
-    public double getsaldo(){
-        return this.saldo;
+    public int getNumeroConta() {
+        return numeroConta;
     }
-    public void setsaldo(double saldo){
-        this.saldo = saldo;
-    }
-    public int getnumeroConta(){
-        return this.numeroConta;
-    }
-    public void setnumeroConta(int numeroConta){
+
+    public void setNumeroConta(int numeroConta) {
         this.numeroConta = numeroConta;
     }
-    public String gettitular(){
-        return this.titular;
+
+    public double getSaldo() {
+        return saldo;
     }
-    public void settitular(String titular){
-        this.titular = titular;
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
     }
 }
