@@ -1,5 +1,7 @@
 package ScreenMatch.Modelo;
 
+import ScreenMatch.Calculos.CalculadoraDeTempo;
+
 public class Principal {
     public static void main(String[] args) {
         //Instanciação de objetos
@@ -26,8 +28,24 @@ public class Principal {
        lost.setTemporadas(10);
        lost.setEpisodiosPorTemporada(20);
        lost.setMinutosPorEpisodio(45);
+       System.out.println("Duração da série: " + lost.getDuracaoEmMinutos());
         lost.setFinalizada(false);
        lost.exibeFichaTecnica();
+
+       
+       System.out.println("-------------------------------------------------");
+       System.out.println("-------------------------------------------------");
+
+       Filme novoFilme = new Filme();
+       novoFilme.setNome("Avatar");
+       novoFilme.setAnodeLancamento(2023);
+       novoFilme.setDuracaoEmMinutos(180);
+
+       CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+       calculadora.inclui(meuFilme);
+       calculadora.inclui(novoFilme);
+       calculadora.inclui(lost);
+       System.out.println("Tempo filme: " + calculadora.getTempoTotal());
        
     }
 }

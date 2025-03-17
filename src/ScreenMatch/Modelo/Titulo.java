@@ -30,7 +30,9 @@ public class Titulo {
     public int getAnoDeLancamento(){
         return anoDeLancamento;
     }
-
+    public int getDuracaoEmMinutos(){
+        return duracaoEmMinutos;
+    }
     //Criando um método
     public void exibeFichaTecnica(){
         System.out.println("Nome do Filme: " + nome);  // Imprimindo o valor do atributo nome
